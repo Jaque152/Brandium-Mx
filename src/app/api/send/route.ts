@@ -4,7 +4,7 @@ import { es } from '@/dictionaries/es';
 import { en } from '@/dictionaries/en';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const EMAIL_FROM = process.env.EMAIL_FROM || 'onboarding@resend.dev'; // Reemplaza con algo como hola@brandiummx.com
+const EMAIL_FROM = process.env.EMAIL_FROM || 'techdesk@brandiummx.com'; 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'techdesk@brandiummx.com';
 
 // ==========================================
@@ -232,7 +232,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ success: true });
-  } catch (error: any) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  } catch (error: unknown) {
+    return NextResponse.json({ success: false, error: (error as Error).message }, { status: 500 });
   }
 }

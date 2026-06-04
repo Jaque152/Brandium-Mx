@@ -71,10 +71,17 @@ export default function CheckoutPage() {
         body: JSON.stringify({
           formData,
           amount: grandTotal,
-          description: `Compra de ${items.length} servicios en Brandium Mx`,
+          cartItems: items, // <--- ESTO ES LO NUEVO E IMPORTANTE
         }),
       });
-      const result = await res.json();
+      
+      const textResponse = await res.text();
+      let result;
+      try {
+        result = JSON.parse(textResponse);
+      } catch (e) {
+        throw new Error(`Error de servidor no válido: ${textResponse.substring(0, 50)}`);
+      }
       
       if (result.success) {
         await fetch('/api/send', {
@@ -89,8 +96,9 @@ export default function CheckoutPage() {
         alert("Hubo un problema con tu pago: " + result.error);
         setIsProcessing(false);
       }
-    } catch (error) {
-      alert("Error de conexión al procesar el pago.");
+    } catch (error: unknown) {
+      const errorMsg = error instanceof Error ? error.message : "Error de conexión";
+      alert("Error crítico: " + errorMsg);
       setIsProcessing(false);
     }
   };

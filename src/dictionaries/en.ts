@@ -12,7 +12,9 @@ export const en = {
       badge: "Welcome to Brandium Mx",
       title1: "Boost your",
       title2: "Social Media",
-      desc: "Fully understand the impact of your profiles. Discover how to accelerate your growth, improve campaign performance, and achieve a unique and unprecedented closeness with your audience."
+      desc: "Fully understand the impact of your profiles. Discover how to accelerate your growth, improve campaign performance, and achieve a unique and unprecedented closeness with your audience.",
+      btn1: "Start now",
+      btn2: "View services"
     },
     services: {
       badge: "Our Services",
@@ -82,7 +84,7 @@ export const en = {
       selectOption: "Select an option"
     },
     validation: {
-      required: "Required",
+      required: "Required field",
       invalidEmail: "Invalid email"
     },
     success: {
@@ -96,7 +98,12 @@ export const en = {
       office: "Office",
       phone: "Phone",
       email: "Email",
-
+      hours: "Business Hours",
+      weekdays: "Monday - Friday",
+      saturday: "Saturday",
+      sunday: "Sunday",
+      closed: "Closed",
+      timezone: "* Mexico City Time (UTC-6)"
     },
     cta: {
       title: "Ready to start?",
@@ -152,6 +159,11 @@ export const en = {
       terms3: "and",
       terms4: "Privacy Policy"
     },
+    validation: {
+      required: "Required",
+      invalidEmail: "Invalid email",
+      incompleteCard: "Incomplete number"
+    },
     summary: {
       title: "Order Summary",
     }
@@ -181,178 +193,6 @@ export const en = {
       total: "Total Paid"
     }
   },
-  products: {
-    strategy: {
-      title: "Digital Advertising Strategy",
-      items: [
-        {
-          id: "strat-1",
-          name: "Business and Target Market Analysis",
-          description: "50 consumer surveys + 3 in-depth interviews. Goal definition.",
-          price: 8199,
-          type: "service"
-        },
-        {
-          id: "strat-2",
-          name: "Small Business",
-          description: "1 meeting, SMART goals, 1 KPI definition.",
-          price: 3599,
-          type: "service"
-        },
-        {
-          id: "strat-3",
-          name: "Medium Business",
-          description: "2 meetings, prior diagnosis, benchmarking, KPI definition.",
-          price: 6399,
-          type: "service"
-        }
-      ]
-    },
-    socialAds: {
-      title: "Social Media Advertising (Social Ads)",
-      items: [
-        {
-          id: "social-1",
-          name: "Growth",
-          description: "1 social network, 12 ads, simple segmentation.",
-          price: 1999,
-          type: "service"
-        },
-        {
-          id: "social-2",
-          name: "Optimization",
-          description: "2-3 platforms, advanced segmentation, remarketing.",
-          price: 5899,
-          type: "service"
-        },
-        {
-          id: "social-3",
-          name: "Pro Scaling",
-          description: "4-5 platforms, exhaustive remarketing, lookalike audiences.",
-          price: 14999,
-          type: "service"
-        }
-      ]
-    },
-    googleAds: {
-      title: "Google Advertising (Google Ads)",
-      items: [
-        {
-          id: "google-1",
-          name: "Search Campaign",
-          description: "Search campaign setup, brand, remarketing, conversions.",
-          price: 4199,
-          type: "service"
-        },
-        {
-          id: "google-2",
-          name: "Display Campaign",
-          description: "Banner design, segmentation, full setup.",
-          price: 7499,
-          type: "service"
-        },
-        {
-          id: "google-3",
-          name: "YouTube Ads",
-          description: "Consulting, format selection (instream, bumper).",
-          price: 6499,
-          type: "service"
-        },
-        {
-          id: "google-4",
-          name: "Shopping Ads for eCommerce",
-          description: "Merchant Center setup, monitoring, and optimization.",
-          price: 11999,
-          type: "service"
-        },
-        {
-          id: "google-5",
-          name: "Local Campaigns",
-          description: "Google Business Profile optimization, call conversions.",
-          price: 9299,
-          type: "service"
-        }
-      ]
-    },
-    emailMarketing: {
-      title: "Email Marketing and Automation",
-      items: [
-        {
-          id: "email-1",
-          name: "Comprehensive Email Management",
-          description: "Template design, automation, and segmentation across platforms.",
-          price: 6399,
-          type: "service"
-        }
-      ]
-    },
-    contentCreation: {
-      title: "Advertising Content Creation",
-      items: [
-        {
-          id: "content-1",
-          name: "Advertising Graphic Design",
-          description: "Image designed for a specific platform.",
-          price: 899,
-          type: "service"
-        },
-        {
-          id: "content-2",
-          name: "Social Media Production 1.0",
-          description: "15-second video with provided material.",
-          price: 4199,
-          type: "service"
-        },
-        {
-          id: "content-3",
-          name: "Social Media Production 2.0",
-          description: "45-second video, scripting, recording, and post-production.",
-          price: 10499,
-          type: "service"
-        },
-        {
-          id: "content-4",
-          name: "Persuasive Copywriting",
-          description: "Headlines, descriptions, and calls to action.",
-          price: 2999,
-          type: "service"
-        }
-      ]
-    },
-    optimization: {
-      title: "Campaign Optimization and Tracking",
-      items: [
-        {
-          id: "opt-1",
-          name: "Basic Meta Pixel Setup",
-          description: "Installation in WordPress.",
-          price: 699,
-          type: "service"
-        },
-        {
-          id: "opt-2",
-          name: "Smart Pixel Plugin",
-          description: "Integration of multiple pixels in WordPress.",
-          price: 899,
-          type: "service"
-        },
-        {
-          id: "opt-3",
-          name: "Advanced GTM Setup",
-          description: "Google Tag Manager and Analytics.",
-          price: 4799,
-          type: "service"
-        },
-        {
-          id: "opt-4",
-          name: "Full Account Optimization",
-          description: "Google Ads, Meta Ads, and Analytics.",
-          price: 8599,
-          type: "service"
-        }
-      ]
-    }
-  },
   customPlan: {
     title1: "Need a",
     title2: "custom plan?",
@@ -375,6 +215,58 @@ export const en = {
       add: "Add to cart",
       added: "Added",
       success: "Quote successfully added"
+    }
+  },
+  products: {
+    strategy: {
+      title: "Digital Advertising Strategy",
+      items: [
+        { id: "strat-1", name: "Business and Target Market Analysis", description: "50 consumer surveys + 3 in-depth interviews. Goal definition (sales, leads, awareness).", price: 8199, type: "service" },
+        { id: "strat-2", name: "Small Business: Single Objective", description: "1 meeting, document with SMART goals, definition of 1 KPI.", price: 3599, type: "service" },
+        { id: "strat-3", name: "Medium Business: 3 Objectives", description: "2 meetings, prior diagnosis, benchmarking, KPI definition.", price: 6399, type: "service" }
+      ]
+    },
+    socialAds: {
+      title: "Social Media Advertising (Social Ads)",
+      items: [
+        { id: "social-1", name: "Growth", description: "1 social network, 12 ads, simple segmentation, basic creativity, without advanced remarketing.", price: 1999, type: "service" },
+        { id: "social-2", name: "Optimization", description: "2-3 platforms, 3 varied ads (image, video), advanced segmentation (interests, behavior), remarketing, optimization.", price: 5899, type: "service" },
+        { id: "social-3", name: "Pro Scaling", description: "4-5 platforms, exhaustive remarketing, lookalike audiences, A/B testing, detailed reporting.", price: 14999, type: "service" }
+      ]
+    },
+    googleAds: {
+      title: "Google Advertising (Google Ads)",
+      items: [
+        { id: "google-1", name: "Search Campaign", description: "Search campaign setup + brand + remarketing + display + conversion tracking + automated reporting.", price: 4199, type: "service" },
+        { id: "google-2", name: "Display Campaign", description: "Banner design and upload (standard and responsive formats). Segmentation by interests, demographics, location, devices. Google Ads setup. Remarketing inclusion.", price: 7499, type: "service" },
+        { id: "google-3", name: "YouTube Ads", description: "Consulting and initial brief. Selection of the appropriate format: skippable instream, bumper ads, discovery.", price: 6499, type: "service" },
+        { id: "google-4", name: "Shopping Ads for eCommerce", description: "Initial feed setup, Merchant Center integration. Shopping campaign creation, strategy, monitoring and optimization + reporting.", price: 11999, type: "service" },
+        { id: "google-5", name: "Local or Call Campaigns", description: "Calls as an objective, Google Business Profile optimization, local segmentation, conversion tracking.", price: 9299, type: "service" }
+      ]
+    },
+    emailMarketing: {
+      title: "Email Marketing and Automation",
+      items: [
+        { id: "email-1", name: "Email Marketing and Automation", description: "Template design adapted to branding. Campaign creation and execution. User behavior automation. Platform integration (Mailchimp, Klaviyo, HubSpot).", price: 6399, type: "service" }
+      ]
+    },
+    contentCreation: {
+      title: "Advertising Content Creation",
+      items: [
+        { id: "content-1", name: "Advertising Graphic Design", description: "Image designed for a specific platform, 1 version, client branding, format ready for publishing.", price: 899, type: "service" },
+        { id: "content-2", name: "Social Media Production 1.0", description: "Provided material or simple shooting, editing, subtitles, adaptation to vertical/horizontal formats. 15-second video.", price: 4199, type: "service" },
+        { id: "content-3", name: "Social Media Production 2.0", description: "Scripting, recording, post-production, light / sound / location management if applicable, revisions. 45-second video.", price: 10499, type: "service" },
+        { id: "content-4", name: "Persuasive Copywriting", description: "Headlines, descriptions, calls to action, conversion optimization, possible target audience research.", price: 2999, type: "service" }
+      ]
+    },
+    optimization: {
+      title: "Campaign Optimization and Tracking",
+      items: [
+        { id: "opt-1", name: "Basic Meta Pixel Setup", description: "Includes: Installation of the Meta Pixel in WordPress using a plugin, without advanced configuration.", price: 699, type: "service" },
+        { id: "opt-2", name: "Smart Pixel Plugin", description: "Includes: Integration of multiple pixels (Meta, Google, TikTok, LinkedIn, among others) in WordPress.", price: 899, type: "service" },
+        { id: "opt-3", name: "Advanced GTM Setup", description: "Includes: GTM setup, integration with Google Analytics and Meta Pixel, including necessary goals, tags, and variables.", price: 4799, type: "service" },
+        { id: "opt-4", name: "Full Account Optimization", description: "Includes: Initial campaign structure, custom event, and account optimization in Google Ads, Meta Ads, and Google Analytics.", price: 8599, type: "service" }
+      ]
     }
   }
 };

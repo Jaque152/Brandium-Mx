@@ -6,18 +6,26 @@ import { useCart } from "@/context/CartContext";
 import { useI18n } from "@/context/I18nContext";
 import { useState } from "react";
 
+
+interface ProductItem {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  type: string;
+}
 export default function PlanesPage() {
   const { addItem, isInCart } = useCart();
   const { t, lang, toggleLanguage } = useI18n();
   const [addedItems, setAddedItems] = useState<string[]>([]);
 
-  const handleAddToCart = (item: any) => {
+  const handleAddToCart = (item: ProductItem) => {
     addItem({
       id: item.id,
       name: item.name,
       description: item.description,
       price: item.price,
-      type: item.type,
+      type: item.type as "plan" | "service" | "addon",
     });
     setAddedItems((prev) => [...prev, item.id]);
     setTimeout(() => {
