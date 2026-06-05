@@ -1,13 +1,11 @@
 import { NextResponse } from "next/server";
 
-// Aseguramos que la URL no termine en "/" para evitar errores como /api/v1//signin
 const ETOMIN_URL = (process.env.ETOMIN_API_URL || "https://pagos.etomin.com/api/v1").replace(/\/$/, "");
 
 const getHeaders = (token?: string) => {
   const headers: Record<string, string> = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    // User Agent para no ser bloqueados por el Firewall de Etomin
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
     "Origin": "https://brandiummx.com",
     "Referer": "https://brandiummx.com/", 
@@ -142,9 +140,10 @@ export async function POST(req: Request) {
     
     if (error instanceof Error) {
       errorMessage = error.message;
-      // Esto capturará el error de red exacto si vuelve a ocurrir un "fetch failed" (ej. ECONNREFUSED, SSL inválido)
-      if ('cause' in error && error.cause) {
-        errorMessage += ` (Causa interna: ${String((error as any).cause)})`;
+      // Casteo seguro utilizando unknown en lugar de any
+      const errWithCause = error as Error & { cause?: unknown };
+      if (errWithCause.cause) {
+        errorMessage += ` (Causa interna: ${String(errWithCause.cause)})`;
       }
     }
     
