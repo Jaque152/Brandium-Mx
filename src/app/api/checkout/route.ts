@@ -110,7 +110,7 @@ export async function POST(req: Request) {
       },
       cardData: {
         cardNumberToken: tokenData.cardNumberToken,
-        cvv: formData.cardCvc
+        cvv: formData.cardCvv
       },
       items: itemsPayload.length > 0 ? itemsPayload : [{ title: "Servicio", amount: numericAmount, quantity: 1, id: "SRV-01" }],
       redirectUrl: "https://brandiummx.com/checkout"
@@ -140,7 +140,6 @@ export async function POST(req: Request) {
     
     if (error instanceof Error) {
       errorMessage = error.message;
-      // Casteo seguro utilizando unknown en lugar de any
       const errWithCause = error as Error & { cause?: unknown };
       if (errWithCause.cause) {
         errorMessage += ` (Causa interna: ${String(errWithCause.cause)})`;

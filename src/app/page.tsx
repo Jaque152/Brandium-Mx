@@ -316,9 +316,9 @@ export default function Home() {
                   <Phone className="w-5 h-5 text-primary" />
                   <span>+52 1 55 5553 0454</span>
                 </a>
-                <a href="mailto:techdesk@brandiummx.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                <a href="mailto:techdesk@brandiumx.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>techdesk@brandiummx.com</span>
+                  <span>techdesk@brandiumx.com</span>
                 </a>
                 <div className="flex items-start gap-3 text-muted-foreground">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -327,12 +327,19 @@ export default function Home() {
               </div>
             </div>
 
+            {/* SECCIÓN LEGAL ACTUALIZADA CON ENLACES */}
             <div>
               <h4 className="text-lg font-medium mb-6">{t.home.footer.legal}</h4>
               <div className="space-y-4">
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t.home.footer.privacy}</a>
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t.home.footer.terms}</a>
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors">{t.home.footer.cancel}</a>
+                <Link href="/privacidad" className="block text-muted-foreground hover:text-foreground transition-colors">
+                  {t.home.footer.privacy}
+                </Link>
+                <Link href="/terminos" className="block text-muted-foreground hover:text-foreground transition-colors">
+                  {t.home.footer.terms}
+                </Link>
+                <Link href="/cancelaciones" className="block text-muted-foreground hover:text-foreground transition-colors">
+                  {t.home.footer.cancel}
+                </Link>
               </div>
             </div>
           </div>
@@ -353,6 +360,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
     </main>
   );
 }

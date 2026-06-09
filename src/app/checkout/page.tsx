@@ -17,7 +17,7 @@ export default function CheckoutPage() {
   const [formData, setFormData] = useState({
     email: "", name: "", phone: "",
     address1: "", address2: "", city: "", state: "", zip: "",
-    cardNumber: "", cardExpiry: "", cardCvc: "", cardName: "",
+    cardNumber: "", cardExpiry: "", cardCvv: "", cardName: "",
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -36,7 +36,7 @@ export default function CheckoutPage() {
     if (name === "cardExpiry") {
       formattedValue = value.replace(/\D/g, "").replace(/(\d{2})(\d)/, "$1/$2").slice(0, 5);
     }
-    if (name === "cardCvc") {
+    if (name === "cardCvv") {
       formattedValue = value.replace(/\D/g, "").slice(0, 4);
     }
     setFormData((prev) => ({ ...prev, [name]: formattedValue }));
@@ -52,7 +52,7 @@ export default function CheckoutPage() {
     if (!formData.cardNumber) newErrors.cardNumber = lang === "es" ? "Requerido" : "Required";
     else if (formData.cardNumber.replace(/\s/g, "").length < 15) newErrors.cardNumber = lang === "es" ? "Incompleto" : "Incomplete";
     if (!formData.cardExpiry) newErrors.cardExpiry = lang === "es" ? "Requerido" : "Required";
-    if (!formData.cardCvc) newErrors.cardCvc = lang === "es" ? "Requerido" : "Required";
+    if (!formData.cardCvv) newErrors.cardCvv = lang === "es" ? "Requerido" : "Required";
     if (!formData.cardName) newErrors.cardName = lang === "es" ? "Requerido" : "Required";
 
     setErrors(newErrors);
@@ -87,7 +87,7 @@ export default function CheckoutPage() {
         await fetch('/api/send', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ type: 'checkout', lang, data: { ...formData, grandTotal } })
+          body: JSON.stringify({ type: 'checkout', lang, data: { ...formData, grandTotal, items } })
         });
         setIsProcessing(false);
         setIsComplete(true);
@@ -218,8 +218,8 @@ export default function CheckoutPage() {
                 <h2 className="text-xl mb-6">{t.checkout.form.billingInfo}</h2>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm text-muted-foreground mb-2">{t.checkout.form.address}</label>
-                    <input type="text" name="address1" value={formData.address1} onChange={handleInputChange} placeholder={t.checkout.form.addressPH} className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:border-primary focus:outline-none" />
+                    <label className="block text-sm text-muted-foreground mb-2">{t.checkout.form.country}</label>
+                    <input type="text" name="address1" value={formData.address1} onChange={handleInputChange} placeholder={t.checkout.form.countryPH} className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:border-primary focus:outline-none" />
                   </div>
                   <div>
                     <label className="block text-sm text-muted-foreground mb-2">{t.checkout.form.address}</label>
@@ -247,8 +247,8 @@ export default function CheckoutPage() {
                       <input type="text" name="cardExpiry" value={formData.cardExpiry} onChange={handleInputChange} placeholder="MM/YY" className={`w-full px-4 py-3 rounded-xl bg-background border ${errors.cardExpiry ? "border-destructive" : "border-border"} focus:border-primary focus:outline-none`} />
                     </div>
                     <div>
-                      <label className="block text-sm text-muted-foreground mb-2">{t.checkout.form.cvc}</label>
-                      <input type="text" name="cardCvc" value={formData.cardCvc} onChange={handleInputChange} className={`w-full px-4 py-3 rounded-xl bg-background border ${errors.cardCvc ? "border-destructive" : "border-border"} focus:border-primary focus:outline-none`} />
+                      <label className="block text-sm text-muted-foreground mb-2">{t.checkout.form.cvv}</label>
+                      <input type="password" name="cardCvv" value={formData.cardCvv} onChange={handleInputChange} className={`w-full px-4 py-3 rounded-xl bg-background border ${errors.cardCvv ? "border-destructive" : "border-border"} focus:border-primary focus:outline-none`} />
                     </div>
                   </div>
                   <div>

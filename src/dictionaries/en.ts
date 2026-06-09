@@ -142,7 +142,7 @@ export const en = {
       phone: "Phone *",
       cardNumber: "Card Number *",
       expiry: "Expiration Date *",
-      cvc: "CVC *",
+      cvv: "CVV *",
       cardName: "Name on Card *",
       cardNamePH: "As it appears on the card",
       country: "Country/Region",
@@ -266,6 +266,229 @@ export const en = {
         { id: "opt-2", name: "Smart Pixel Plugin", description: "Includes: Integration of multiple pixels (Meta, Google, TikTok, LinkedIn, among others) in WordPress.", price: 899, type: "service" },
         { id: "opt-3", name: "Advanced GTM Setup", description: "Includes: GTM setup, integration with Google Analytics and Meta Pixel, including necessary goals, tags, and variables.", price: 4799, type: "service" },
         { id: "opt-4", name: "Full Account Optimization", description: "Includes: Initial campaign structure, custom event, and account optimization in Google Ads, Meta Ads, and Google Analytics.", price: 8599, type: "service" }
+      ]
+    }
+  },
+  legal: {
+    terms: {
+      title: "Terms and Conditions governing the use of Brandiumx",
+      sections: [
+        {
+          title: "First – General Declaration and Acceptance",
+          content: [
+            "This document contains the Terms and Conditions that regulate the access and use of the Brandiumx website, as well as the contracting of the services offered.",
+            "The use of the website and the request for any of the services implies full and unreserved acceptance of these Terms and Conditions, as well as the Privacy Notice and other policies published on the same page.",
+            "Anyone who does not agree with any provision contained herein must refrain from using the site and contracting services. Brandiumx reserves the right to update the content of these Terms at any time. The User acknowledges that the continued use of the website constitutes express acceptance of any modification."
+          ]
+        },
+        {
+          title: "Second – Scope and Definitions",
+          content: [
+            "For the purposes of these Terms and Conditions, the following shall be understood:",
+            "“Content”: all information, text, images, graphics, logos, videos, and other materials published on the Website.",
+            "“Website”: brandiumx.com",
+            "“Services”: the products and/or services offered through the Website.",
+            "“User”: any person who accesses Brandiumx and/or uses its services.",
+            "“Brandiumx”: VALORHITS COMUNICACION DIGITAL, S.A. DE C.V., a Mexican company legally constituted under Mexican laws that has the necessary capacity to present the following Terms and Conditions governing the use of the Brandiumx Website.",
+            "Brandiumx may provide, suspend, or modify the Services temporarily or permanently at any time, without prior notice, when there is a reasonable cause to do so."
+          ]
+        },
+        {
+          title: "Third – Description and Scope of Services",
+          content: [
+            "Brandiumx offers its clients comprehensive digital marketing services, structured in the following areas:",
+            "Digital Advertising Strategy: Strategic consulting, business and market analysis, creation and application of surveys, interviews, diagnosis, and joint definition of goals and KPIs, according to the size of the company, with variable prices depending on the selected package.",
+            "Social Media Advertising (Social Ads): Planning and execution of segmented campaigns by level (Growth, Optimization, Pro Scaling) on various platforms, with different degrees of reach, creativity, remarketing, and reporting, depending on the contracted modality.",
+            "Google Advertising (Google Ads): Execution of Search, Display, YouTube, Shopping Ads, and local campaigns, including setup, tracking, optimization, and automated reporting, according to the defined plan and the client's requirements.",
+            "Email Marketing and Automation: Design and management of templates, campaigns, automated sequences, segmentation, and reports, integrating third-party tools (Mailchimp, Klaviyo, HubSpot) according to the client's needs and objectives.",
+            "Advertising Content Creation: Development of graphic material, audiovisual editing and production, and creative copywriting optimized for conversions.",
+            "Campaign Optimization and Tracking: Installation and/or integration of tracking systems (Meta Pixel, Google Analytics, GTM), advanced technical configuration according to the guidelines informed to the client.",
+            "Each contracted service is detailed in the accepted quote and/or proposal, explicitly stating deliverables, the number of revisions included, estimated times, and specific exclusions. Brandiumx reserves the right to update the descriptions and prices of the services, always respecting the conditions agreed upon at the time of closing the deal."
+          ]
+        },
+        {
+          title: "Fourth – Registration, Contracting, and Payment",
+          content: [
+            "Contracting the services requires the formal acceptance of a quote and the complete submission of the requested tax and contact data for billing.",
+            "The prices of each service are expressed in Mexican pesos (MXN) and are plus 16% VAT, unless specifically indicated otherwise in the accepted quote. The client is responsible for the veracity and timeliness of the information provided and must comply with the agreed payments in a timely manner.",
+            "Brandiumx will not be obligated to start, execute, or deliver any service as long as it has not received the advance payment, or the full payment, depending on the established terms and the nature of the selected services."
+          ]
+        },
+        {
+          title: "Fifth – Modifications, Changes, and Cancellations",
+          content: [
+            "Any modification in characteristics, scopes, times, or deliverables of the initially contracted services must be requested in writing and will be subject to a feasibility analysis, budget adjustment, and time rescheduling, if applicable. The client may cancel non-initiated services without any penalty; once execution has begun, the cancellation and any possible refund will be subject to Brandiumx's current policy, which privileges fair and transparent treatment according to the nature of digital and custom-made services. Personalized services, finalized digital deliverables, or activated campaigns are non-refundable, except for justified causes attributable to Brandiumx or in cases of force majeure properly accredited."
+          ]
+        },
+        {
+          title: "Sixth – Deliveries, Responsibility, and Warranties",
+          content: [
+            "The delivery of digital materials and results (strategies, final documents, designs, configured campaigns, reports, graphic or audiovisual material, access to analysis and metrics, among others) will be carried out through the means defined with the client. The client must confirm the correct receipt and functioning of the deliverables within three calendar days following each partial or final delivery. After that period, they will be presumed accepted except for proven hidden defects. Support and corrections will be limited to the period and scopes agreed upon in each specific service. Brandiumx will not be responsible, unless agreed in writing, for specific guaranteed results in sales, conversions, contacts, or other indicators, since these depend on multiple factors beyond Brandiumx's direct control."
+          ]
+        },
+        {
+          title: "Seventh – Intellectual Property and Usage Rights",
+          content: [
+            "All materials, creatives, technical configurations, texts, databases, reports, videos, and campaigns developed by Brandiumx will be the exclusive property of the company until the total payment of the services. Once payment is fulfilled, the client will have the right to use the delivered materials and campaigns, always respecting third-party copyrights and the corresponding licenses indicated as required for commercial exploitation."
+          ]
+        },
+        {
+          title: "Eighth – Data Protection and Confidentiality",
+          content: [
+            "Personal and commercial information, and any data provided by the client through the website, will be treated confidentially and in accordance with applicable Mexican laws and the Privacy Notice published on the Brandiumx website. The client agrees that their information may be used for the provision, improvement, and commercial communication of the contracted services, without being shared with third parties, except with express authorization or a founded legal requirement motivated by a competent authority."
+          ]
+        },
+        {
+          title: "Ninth – Updates and Modifications to the Terms",
+          content: [
+            "Brandiumx may modify these Terms and Conditions at any time, whether due to changes in legislation, expansion in the range of services, or technological adaptations. Modifications will be published on the website, and continued use implies acceptance of the updated version. The client is responsible for periodically reviewing this section."
+          ]
+        },
+        {
+          title: "Tenth – Legislation and Jurisdiction",
+          content: [
+            "Any controversy derived from the interpretation or application of these Terms and Conditions will be governed by current Mexican legislation and will be the exclusive competence of the courts based in Mexico City."
+          ]
+        }
+      ]
+    },
+    cancellations: {
+      title: "Cancellation and Refund Policy of Brandiumx",
+      sections: [
+        {
+          title: "First – Scope and purpose",
+          content: [
+            "This policy regulates cancellations and refunds applicable to the contracting of Brandiumx services, including consulting, planning, campaign execution, content creation, and associated services, as detailed in the accepted quote.",
+            "Its objective is to provide clarity, predictability, and fair treatment to clients and Brandiumx, respecting current regulations and the conditions agreed upon in each project.",
+            "Any reference to cancellation or refund must be understood according to the conditions established in the corresponding proposal and the provisions of these rules."
+          ]
+        },
+        {
+          title: "Second – Cancellation prior to start",
+          content: [
+            "In case the cancellation is communicated at least twenty-four (24) hours before the scheduled start date of the project, the client will be entitled to a full refund of the amount paid, deducting only strictly necessary administrative costs, if any.",
+            "The refund will be made to the same account or payment method used for the original transaction, according to the usual banking terms. Any additional charge must be previously informed and approved by the client. This point applies as long as the execution of the service has not started."
+          ]
+        },
+        {
+          title: "Third – Cancellation during execution",
+          content: [
+            "If the cancellation occurs after execution has begun, it will be analyzed case by case to determine the part of the service already provided and/or the expenses incurred. A partial refund proportional to the unexecuted section or non-recoverable costs may be made, provided there is documentary justification of expenses and progress.",
+            "In no case will deliverables already produced or services actually consumed be refunded, unless there is a responsibility attributable to Brandiumx or circumstances of force majeure properly accredited."
+          ]
+        },
+        {
+          title: "Fourth – No refunds and exceptions",
+          content: [
+            "Refunds will not be allowed in the following circumstances:",
+            "If the client requests cancellation outside the period of twenty-four (24) hours prior to the start.",
+            "If final deliverables have already been delivered or if the project has reached an execution state that prevents reverting reasonable expenses.",
+            "If the cancellation affects licenses, subscriptions, or external supplier expenses previously acquired for the provision of the service.",
+            "Any exception to these rules must be documented and authorized by an authorized Brandiumx representative."
+          ]
+        },
+        {
+          title: "Fifth – Notice and procedure",
+          content: [
+            "Cancellation or refund requests must be made in writing and addressed to the customer service address indicated by Brandiumx. Communications must include the full name of the account holder, the contract or order number, the scheduled start date, and a clear explanation of the reason for cancellation. Brandiumx commits to responding within a reasonable timeframe and documenting each decision made regarding the cancellation or refund."
+          ]
+        },
+        {
+          title: "Sixth – Refund process",
+          content: [
+            "Cancellation or refund requests must be made in writing and addressed to the support address techdesk@brandiumx.com. Communications must include the full name of the account holder, the contract or order number, the scheduled start date, and a clear explanation of the reason for cancellation. Brandiumx commits to sending the details of the refund process by email, including the justification for the return and the decision made, and to responding within a reasonable timeframe to document each case."
+          ]
+        },
+        {
+          title: "Seventh – Rights and contact",
+          content: [
+            "The client retains their right to check the status of their cancellation or refund request at any time. To resolve any questions or make observations, you can contact the Brandiumx team through the official customer service channel, which will be indicated in the quote and on the contact page."
+          ]
+        },
+        {
+          title: "Eighth – Alterations to the policy",
+          content: [
+            "Brandiumx may modify this Cancellation and Refund Policy; such changes will be communicated promptly and will enter into force upon publication on the website or via direct notification to the client with sufficient notice. The version in force at the time of contracting will govern the relationship between the parties."
+          ]
+        },
+        {
+          title: "Closing",
+          content: [
+            "This policy seeks to balance the trust and security of clients with the operational viability of Brandiumx, maintaining transparency at every step and providing clear mechanisms to resolve cancellation and refund situations fairly and efficiently."
+          ]
+        }
+      ]
+    },
+    privacy: {
+      title: "Privacy Notice of Brandiumx",
+      sections: [
+        {
+          title: "First – Identity and Domicile of the Controller",
+          content: [
+            "VALORHITS COMUNICACION DIGITAL, S.A. DE C.V. (“Brandiumx”), domiciled at AVENIDA TAMAULIPAS, NO. 150, PISO 18, INT. 1801, COLONIA HIPODROMO, ALCALDÍA CUAUHTÉMOC, C.P. 06100 CDMX., is responsible for processing the personal data that the user provides directly or indirectly through our website, social networks, digital media, or official communications. The data controller's contact is: techdesk@brandiumx.com for any matter related to your privacy rights or concerns."
+          ]
+        },
+        {
+          title: "Second – Personal Data Collected",
+          content: [
+            "Brandiumx may request and collect the following user data when interacting with our website: full name, email, phone number, corporate name, tax address, tax data for billing, professional contact information, and any other data or file necessary for the proper provision of our services. Likewise, technical browsing data such as IP, browser, device, time, and journey on the website may be collected through the use of cookies and similar technologies. Brandiumx does not request sensitive personal data; if received, they will be treated under maximum confidentiality and protection."
+          ]
+        },
+        {
+          title: "Third – Purposes of the Processing",
+          content: [
+            "The personal data collected will be used for the following primary purposes:",
+            "To properly address requests for information, quotes, and contracting of advertising and digital services.",
+            "To communicate progress, deliveries, relevant notifications about the provision of contracted services, and customer support.",
+            "To maintain commercial records and safeguard documentary evidence of the professional relationship.",
+            "To verify the client's identity for internal security and legal compliance procedures.",
+            "For secondary purposes (optional), we may use contact data to send newsletters, promotions, updates on Brandiumx products or services, satisfaction surveys, and related materials. If the user does not want their data to be processed for these secondary purposes, they may state so at any time by sending an email to the aforementioned address."
+          ]
+        },
+        {
+          title: "Fourth – Transfers and Shared Use",
+          content: [
+            "Brandiumx does not sell, assign, or transfer personal data to third parties, except when required by Mexican law, by requirement of a competent authority, for the defense of rights in legal proceedings, or when strictly necessary for the provision of an agreed service (e.g., integration with mailing providers, technical systems, or other strategic allies under strict confidentiality and data protection agreements)."
+          ]
+        },
+        {
+          title: "Fifth – ARCO Rights (Access, Rectification, Cancellation, and Opposition)",
+          content: [
+            "The user may exercise their rights of access, rectification, cancellation, and opposition regarding their personal data at any time, as provided in the Federal Law on Protection of Personal Data Held by Private Parties. To do so, simply submit a request (indicating full name, email, right to exercise, and documents proving identity) to the email: techdesk@brandiumx.com. Requests will be attended within the legal period, receiving a response by the same means.",
+            "Likewise, you may request the revocation of your consent at any time, as well as limit the use or disclosure of your data, including opting out of commercial promotions."
+          ]
+        },
+        {
+          title: "Sixth – Security and Confidentiality",
+          content: [
+            "Brandiumx implements administrative, technical, and physical security measures to protect personal data against damage, loss, alteration, destruction, unauthorized use, access, or processing. Information is safeguarded on servers with encryption protocols and controlled access, limiting information strictly to authorized personnel."
+          ]
+        },
+        {
+          title: "Seventh – Use of Cookies, Web Beacons, and Tracking Technologies",
+          content: [
+            "Our website uses cookies and tracking technologies solely to optimize the browsing experience, maintain statistical records, and improve content. The user can disable cookies at any time from their browser settings, although such action could affect the optimal functioning of the website. For more information, you can consult the Cookies Policy published on the website."
+          ]
+        },
+        {
+          title: "Eighth – Modifications to the Privacy Notice",
+          content: [
+            "This Privacy Notice may be modified or updated at any time, arising from legal requirements, improvements in our service model, or internal changes in data management policies. Modifications will be published in the corresponding section of the website, and the user must consult it periodically."
+          ]
+        },
+        {
+          title: "Ninth – Personal Data Protection Authority",
+          content: [
+            "If you consider that your right to data protection has been violated by any action or omission of Brandiumx, you may approach the National Institute of Transparency, Access to Information and Protection of Personal Data (INAI). More information at www.inai.org.mx."
+          ]
+        },
+        {
+          title: "Tenth – Acceptance",
+          content: [
+            "The use of the website and the submission of data through any form, email, contract, or digital medium implies the acceptance of this Privacy Notice.",
+            "If it is required to customize contact data, expand technical sections, or add specific details about international transfers or mailing services, indicate it to integrate it according to your operation."
+          ]
+        }
       ]
     }
   }

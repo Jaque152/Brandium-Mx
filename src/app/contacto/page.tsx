@@ -157,7 +157,7 @@ export default function ContactoPage() {
                 </div>
                 <div className="flex items-center gap-4 p-4 rounded-2xl hover:bg-white/5 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><Mail className="w-5 h-5 text-primary" /></div>
-                  <div><p className="text-sm text-muted-foreground">{t.contact.info.email}</p><p className="font-medium">techdesk@brandiummx.com</p></div>
+                  <div><p className="text-sm text-muted-foreground">{t.contact.info.email}</p><p className="font-medium">techdesk@brandiumx.com</p></div>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-2xl">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"><MapPin className="w-5 h-5 text-primary" /></div>
