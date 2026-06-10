@@ -120,11 +120,7 @@ export const en = {
     success: {
       title1: "Payment",
       title2: "successful!",
-      desc: "We have received your payment. You will shortly receive an email with your subscription details and next steps.",
-      stepsTitle: "Next steps:",
-      step1: "You will receive a welcome email with access to your dashboard",
-      step2: "A specialist will contact you within the next 24 hours",
-      step3: "We will start working on your social media strategy",
+      desc: "We have received your payment. You will shortly receive an email with your subscription details.",
       btn: "Return to home"
     },
     header: {

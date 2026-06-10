@@ -133,14 +133,6 @@ export default function CheckoutPage() {
               {t.checkout.success.title1} <span className="text-gradient">{t.checkout.success.title2}</span>
             </h1>
             <p className="text-muted-foreground mb-8">{t.checkout.success.desc}</p>
-            <div className="glass-card rounded-2xl p-6 mb-8 text-left">
-              <h3 className="font-medium mb-4">{t.checkout.success.stepsTitle}</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center flex-shrink-0">1</span>{t.checkout.success.step1}</li>
-                <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center flex-shrink-0">2</span>{t.checkout.success.step2}</li>
-                <li className="flex items-start gap-3"><span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-xs flex items-center justify-center flex-shrink-0">3</span>{t.checkout.success.step3}</li>
-              </ul>
-            </div>
             <Link href="/" className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium inline-flex items-center gap-2">
               {t.checkout.success.btn}
             </Link>
